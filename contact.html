@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    
+    <!---------      HEADER      -------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TartaYan Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/19e5fb4e04.js" crossorigin="anonymous"></script>
+</head>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+</style>
+
+<body>
+ <!---------        N A V B A R        -------->
+ <nav class="navbar">
+    <div class="navbar_container">
+        <a href="index.html" id="navbar_logo">TartaYan <span>Dulces con Acento</span></a>
+
+        <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="index.html" class="navbar_links" id="home-page">Home</a>
+            </li>
+            <li class="navbar_item">
+                <a href="index.html" class="navbar_links" id="about-page">¿Quién soy?</a>
+            </li>
+            <li class="navbar_item">
+                <a href="index.html" class="navbar_links" id="services-page">Galería</a>
+            </li>
+            <li class="navbar_btn">
+                <a href="contact.html" class="button" id="sign_up">Contáctame</a>
+            </li>
+        </ul>
+        
+    </div>
+</nav>
+
+<div class="contact_form">
+    <form action="https://formsubmit.co/elenadutova@seznam.cz" method="POST"> 
+        <!-- HONEYPOT-->
+        <input type="text" name="_honey" style="display:none;">
+         <!-- Disable Captcha-->
+         <input type="hidden" name="_captcha" value="false">
+
+         <h3>ESCRÍBEME UN MENSAJE</h3>
+        <input type="text" id="Name" name="Name" placeholder="Tu nombre" required>
+        <input type="email" id="Email" name="Email" placeholder="Tu email" required>
+        <input type="text" id="Phone" name="Phone" placeholder="Tu teléfono" required>
+        <textarea id="message" rows="5" name="Message" placeholder="Tu mensaje"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+    
+
+  <!----------------    FOOTER   ------------>
+  <div class="footer">
+    <div class="social_media_wrap">
+        <div class="footer_logo">
+            <a href="/" id="footer_logo">TartaYan</a>
+        </div>
+        <p class="website_rights">@ TartaYan 2022. All rights reserved.</p>
+        <div class="social_icons">
+            <a href="/" class="social_icon_link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="/" class="social_icon_link" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="/" class="social_icon_link" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+<script src="wapp.js"> </script>
+</body>
+
+</html>
